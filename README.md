@@ -29,5 +29,3 @@ Dennis Engdahl
 NR6J
 (530) 926-2996
 NR6J@arrl.net
-engdahl@snowcrest.net
-
