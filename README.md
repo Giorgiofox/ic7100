@@ -7,7 +7,7 @@ ic7100 shows Icons that are similar to the icons on the 7100 control head, in a 
 
 This project is in its development phase, so it is not complete.  It is placed on Github for experimenters.  Please do not assume that all will work.
 
-If you have suggestions or have noticed errors in the source code, you may communicate by opening an issue, or via email at nr6j@arrl.org.
+If you have suggestions or have noticed errors in the source code, you may communicate by opening an issue, or via email at NR6J@arrl.net.
 
 IMPORTANT: I DO NOT ASSUME ANY RESPONSIBILITY FOR YOUR USE OF THIS SOFTWARE, AND I MAKE NO REPRESENTATIONS ABOUT ITS SAFETY, APPROPRIATENESS, OR USE FOR A PARTICULAR PURPOSE.  USE OF THIS SOFTWARE IS AS-IS.
 
@@ -28,6 +28,6 @@ Hopefully, this program will be helpful for experimenters, and if you have addit
 Dennis Engdahl
 NR6J
 (530) 926-2996
-nr6j@arrl.org
+NR6J@arrl.net
 engdahl@snowcrest.net
 
