@@ -72,10 +72,41 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BandForm.Designer.vb">
+      <DependentUpon>BandForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BandForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Globals.vb" />
+    <Compile Include="RxHistForm.Designer.vb">
+      <DependentUpon>RxHistForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RxHistForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectForm.Designer.vb">
+      <DependentUpon>SelectForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PercentForm.Designer.vb">
+      <DependentUpon>PercentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PercentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Screen.Designer.vb">
       <DependentUpon>Screen.vb</DependentUpon>
     </Compile>
     <Compile Include="Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetForm.Designer.vb">
+      <DependentUpon>SetForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Terminal.vb">
@@ -102,8 +133,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BandForm.resx">
+      <DependentUpon>BandForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RxHistForm.resx">
+      <DependentUpon>RxHistForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectForm.resx">
+      <DependentUpon>SelectForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PercentForm.resx">
+      <DependentUpon>PercentForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screen.resx">
       <DependentUpon>Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetForm.resx">
+      <DependentUpon>SetForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Terminal.resx">
       <DependentUpon>Terminal.vb</DependentUpon>

@@ -25,22 +25,20 @@ Partial Class Terminal
         Me.components = New System.ComponentModel.Container()
         Me.BtnInit = New System.Windows.Forms.Button()
         Me.BtnClose = New System.Windows.Forms.Button()
-        Me.BtnWrite = New System.Windows.Forms.Button()
-        Me.RtxInput = New System.Windows.Forms.RichTextBox()
         Me.RtxOutput = New System.Windows.Forms.RichTextBox()
-        Me.LblInput = New System.Windows.Forms.Label()
-        Me.LblOutput = New System.Windows.Forms.Label()
         Me.CmbPort = New System.Windows.Forms.ComboBox()
-        Me.CmbBaud = New System.Windows.Forms.ComboBox()
         Me.SerialPort = New System.IO.Ports.SerialPort(Me.components)
+        Me.btnScreen0 = New System.Windows.Forms.Button()
+        Me.btnCapture = New System.Windows.Forms.Button()
+        Me.btnscreen1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnInit
         '
         Me.BtnInit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnInit.Location = New System.Drawing.Point(1023, 48)
+        Me.BtnInit.Location = New System.Drawing.Point(698, 146)
         Me.BtnInit.Name = "BtnInit"
-        Me.BtnInit.Size = New System.Drawing.Size(75, 38)
+        Me.BtnInit.Size = New System.Drawing.Size(80, 38)
         Me.BtnInit.TabIndex = 0
         Me.BtnInit.Text = "Init"
         Me.BtnInit.UseVisualStyleBackColor = True
@@ -48,115 +46,87 @@ Partial Class Terminal
         'BtnClose
         '
         Me.BtnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnClose.Location = New System.Drawing.Point(1023, 96)
+        Me.BtnClose.Location = New System.Drawing.Point(698, 190)
         Me.BtnClose.Name = "BtnClose"
-        Me.BtnClose.Size = New System.Drawing.Size(75, 38)
+        Me.BtnClose.Size = New System.Drawing.Size(80, 38)
         Me.BtnClose.TabIndex = 1
         Me.BtnClose.Text = "Close"
         Me.BtnClose.UseVisualStyleBackColor = True
         '
-        'BtnWrite
-        '
-        Me.BtnWrite.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnWrite.Location = New System.Drawing.Point(772, 48)
-        Me.BtnWrite.Name = "BtnWrite"
-        Me.BtnWrite.Size = New System.Drawing.Size(75, 38)
-        Me.BtnWrite.TabIndex = 2
-        Me.BtnWrite.Text = "Write"
-        Me.BtnWrite.UseVisualStyleBackColor = True
-        '
-        'RtxInput
-        '
-        Me.RtxInput.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RtxInput.Location = New System.Drawing.Point(26, 48)
-        Me.RtxInput.Name = "RtxInput"
-        Me.RtxInput.Size = New System.Drawing.Size(717, 126)
-        Me.RtxInput.TabIndex = 3
-        Me.RtxInput.Text = ""
-        '
         'RtxOutput
         '
         Me.RtxOutput.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RtxOutput.Location = New System.Drawing.Point(26, 204)
+        Me.RtxOutput.Location = New System.Drawing.Point(26, 48)
         Me.RtxOutput.Name = "RtxOutput"
-        Me.RtxOutput.Size = New System.Drawing.Size(1074, 126)
+        Me.RtxOutput.Size = New System.Drawing.Size(655, 410)
         Me.RtxOutput.TabIndex = 4
         Me.RtxOutput.Text = ""
-        '
-        'LblInput
-        '
-        Me.LblInput.AutoSize = True
-        Me.LblInput.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblInput.Location = New System.Drawing.Point(26, 26)
-        Me.LblInput.Name = "LblInput"
-        Me.LblInput.Size = New System.Drawing.Size(46, 20)
-        Me.LblInput.TabIndex = 5
-        Me.LblInput.Text = "Input"
-        '
-        'LblOutput
-        '
-        Me.LblOutput.AutoSize = True
-        Me.LblOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblOutput.Location = New System.Drawing.Point(26, 185)
-        Me.LblOutput.Name = "LblOutput"
-        Me.LblOutput.Size = New System.Drawing.Size(58, 20)
-        Me.LblOutput.TabIndex = 6
-        Me.LblOutput.Text = "Output"
         '
         'CmbPort
         '
         Me.CmbPort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CmbPort.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CmbPort.FormattingEnabled = True
-        Me.CmbPort.Location = New System.Drawing.Point(873, 48)
+        Me.CmbPort.Location = New System.Drawing.Point(698, 65)
         Me.CmbPort.Name = "CmbPort"
         Me.CmbPort.Size = New System.Drawing.Size(121, 28)
         Me.CmbPort.TabIndex = 7
         '
-        'CmbBaud
+        'btnScreen0
         '
-        Me.CmbBaud.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CmbBaud.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CmbBaud.FormattingEnabled = True
-        Me.CmbBaud.Items.AddRange(New Object() {"9600", "38400", "57600", "115200"})
-        Me.CmbBaud.Location = New System.Drawing.Point(873, 96)
-        Me.CmbBaud.Name = "CmbBaud"
-        Me.CmbBaud.Size = New System.Drawing.Size(121, 28)
-        Me.CmbBaud.TabIndex = 8
+        Me.btnScreen0.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnScreen0.Location = New System.Drawing.Point(698, 277)
+        Me.btnScreen0.Name = "btnScreen0"
+        Me.btnScreen0.Size = New System.Drawing.Size(80, 38)
+        Me.btnScreen0.TabIndex = 9
+        Me.btnScreen0.Text = "Screen0"
+        Me.btnScreen0.UseVisualStyleBackColor = True
         '
-        'SerialPort
+        'btnCapture
         '
+        Me.btnCapture.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCapture.Location = New System.Drawing.Point(698, 406)
+        Me.btnCapture.Name = "btnCapture"
+        Me.btnCapture.Size = New System.Drawing.Size(80, 38)
+        Me.btnCapture.TabIndex = 11
+        Me.btnCapture.Text = "Capture"
+        Me.btnCapture.UseVisualStyleBackColor = True
         '
-        'Form1
+        'btnscreen1
+        '
+        Me.btnscreen1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnscreen1.Location = New System.Drawing.Point(698, 321)
+        Me.btnscreen1.Name = "btnscreen1"
+        Me.btnscreen1.Size = New System.Drawing.Size(80, 38)
+        Me.btnscreen1.TabIndex = 12
+        Me.btnscreen1.Text = "Screen1"
+        Me.btnscreen1.UseVisualStyleBackColor = True
+        '
+        'Terminal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.ClientSize = New System.Drawing.Size(1128, 358)
-        Me.Controls.Add(Me.CmbBaud)
+        Me.ClientSize = New System.Drawing.Size(833, 468)
+        Me.Controls.Add(Me.btnscreen1)
+        Me.Controls.Add(Me.btnCapture)
+        Me.Controls.Add(Me.btnScreen0)
         Me.Controls.Add(Me.CmbPort)
-        Me.Controls.Add(Me.LblOutput)
-        Me.Controls.Add(Me.LblInput)
         Me.Controls.Add(Me.RtxOutput)
-        Me.Controls.Add(Me.RtxInput)
-        Me.Controls.Add(Me.BtnWrite)
         Me.Controls.Add(Me.BtnClose)
         Me.Controls.Add(Me.BtnInit)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "Terminal"
+        Me.Text = "Setup"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents BtnInit As Button
     Friend WithEvents BtnClose As Button
-    Friend WithEvents BtnWrite As Button
-    Friend WithEvents RtxInput As RichTextBox
     Friend WithEvents RtxOutput As RichTextBox
-    Friend WithEvents LblInput As Label
-    Friend WithEvents LblOutput As Label
     Friend WithEvents CmbPort As ComboBox
-    Friend WithEvents CmbBaud As ComboBox
     Friend WithEvents SerialPort As IO.Ports.SerialPort
+    Friend WithEvents btnScreen0 As Button
+    Friend WithEvents btnCapture As Button
+    Friend WithEvents btnscreen1 As Button
 End Class
